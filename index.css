@@ -1,9 +1,9 @@
 body{
 position:"absolute";
-left:"0px";
-right:"0px";
-top:"0px";
-bottom:"0px";
+left:0;
+right:0;
+top:0;
+bottom:0;
 
 }
 nav{
@@ -299,4 +299,23 @@ opacity: 0.3;
     margin: 20px;
     font-size:30px;
     } 
-    
+    #cv{
+
+         position:relative;
+         top:172px;
+         left:120px;
+         height:300px;
+         width:300px;
+       }
+    #contactermoi img{
+     border-radius:62px;
+       opacity: 0.6;
+      height:300px;
+      width:300px;
+    }
+    #contactermoi h3{
+
+        font-family: 'Nunito', sans-serif;
+        font-size:25px;
+        color:rgba(57,62,70,1);
+       }
