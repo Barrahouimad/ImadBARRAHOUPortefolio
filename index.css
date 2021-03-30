@@ -1,0 +1,302 @@
+body{
+position:"absolute";
+left:"0px";
+right:"0px";
+top:"0px";
+bottom:"0px";
+
+}
+nav{
+
+    height: 100%;
+    background: rgba(34,40,49,1);
+   position:fixed;
+  width:200px;
+  
+  }
+  #links{
+    margin-top:70px;
+    color:#ffd369;
+  }
+  
+  #icone{
+     height:70px;
+     width:100px;
+     margin-left:20px;
+  }
+#logo{
+    border-radius: 26px;
+    height: 50px;
+    margin-left:10px;
+    margin-top:3px;
+}
+#nav{
+    border-radius: 62px;
+}
+
+#nav:hover{
+  text-decoration:solid  #ffd369;
+  background: rgba(57,62,70,1);
+  border-radius: 62px;
+}
+
+#home{
+    position:absolute;
+    top:0;
+    left:200px;
+    right:0px;
+  
+    background: rgb(57,62,70);
+    background: linear-gradient(90deg, rgba(57,62,70,1) 37%, rgba(34,40,49,1) 83%);
+    height:100%;
+ 
+}
+#btncontact{
+    animation:contact 0.5s linear;
+    animation-delay: 2s;
+    margin-left:160px;
+    margin-top:80px;
+    border-radius:62px;
+    height:90px;
+    width:300px;
+     font-size:25px;
+    }
+#parade{
+  clip-path: circle(46.5% at 100% 11%);
+  opacity: 0.5;
+ position:absolute;
+ top: 0;
+ right:0;
+
+}
+
+#nom{
+  visibility: hidden;
+    animation:intro 2s linear; 
+    margin-top:110px;
+    font-family: 'Train One', cursive;
+    margin-left:10px;
+}
+#nnom{
+    animation:introo 2s  linear; 
+    font-family: 'Train One', cursive;
+    color:#eeeeee;
+    margin-top:100px;
+    margin-left:20px;
+  
+}
+
+@keyframes intro{
+    0%{
+        visibility:hidden;
+        margin-top:0px;
+    }
+    20%{
+        visibility:visible;
+        color:#eeeeee;
+     
+    }
+    40%{
+        visibility:visible;
+        color:#eeeeee;
+        margin-top:100px;
+
+    }
+    60%{
+        visibility:visible;
+        color:#eeeeee;
+        margin-top:150px;
+    }
+    80%{
+        
+        margin-top:130px;
+        color:#eeeeee;
+    }
+    100%{
+        margin-top:110px;
+        visibility:hidden;
+    }
+}
+@keyframes introo {
+        0%{
+            visibility:hidden;
+            margin-top:0px;
+            color:#9bfc92;
+        }
+        40%{
+            visibility:hidden;
+            color:#9bfc92;
+         
+        }
+        60%{
+            visibility:visible;
+            color:#9bfc92;
+
+        }
+        80%{
+        
+        
+            color:#9bfc92;
+            visibility:visible;
+        }
+  
+        100%{
+            color:#eeeeee;
+        
+        }
+    }
+    @keyframes contact{
+        0%{
+            visibility:hidden;
+            margin-left:0px;
+        
+        }
+        40%{
+            visibility:hidden;
+            margin-left:20px;
+        }
+        60%{
+            visibility:hidden;
+            margin-left:40px;
+        }
+        80%{
+            visibility:visible;
+            margin-left:60px;
+        }
+  
+        100%{
+            margin-left:80px;
+        
+        }
+    }
+
+
+
+    #formation{
+        position:absolute;
+        left:200px;
+        top:700px;
+        right:0px;
+        height:100%;
+        background:#ffd369;
+        background: linear-gradient(40deg, rgba(57,62,70,1) 3%, #ffd369 93%);
+       
+    }
+    #formation p{
+        color:rgba(238,238,238,1);    
+        font-family: 'Train One', cursive;
+    }
+
+#projets{
+ 
+    position:absolute;
+    top:1400px;
+    left:200px;
+    right:0px;
+    height:100%;
+    background: url(assets/black4.jpg) ;
+     background:#ffd369;
+        background: linear-gradient(40deg, rgba(57,62,70,1) 27%, #ffd369 63%);
+       
+    background-size:cover
+   
+}
+#projets button{
+      position:relative;
+      bottom:2px;
+      left:20px;
+    color:#c79318;
+}
+#projets strong{
+ 
+   color:rgba(57,62,70,1);
+   font-family: 'Chango', cursive;
+   margin-left:15px;
+}
+#projectitem{
+    color:rgba(238,238,238,1);
+    margin-top:200px;
+    margin-left:120px;
+    padding-top:10px;
+
+    border:1px solid rgba(57,62,70,1);
+    height:300px;
+    width:200px;
+    border-radius:62px;
+    background:rgba(57,62,70,0.4);
+    box-shadow:rgba(238,238,238,1) 3px 3px 30px 10px ;
+}
+#commentaire{
+    font-size:12px;
+    color:gray;
+    float:right;
+}
+
+#competences{
+
+    position:absolute;
+    top:2105px;
+    left:200px;
+    right:0px;
+    height:100%;
+   
+    background:#ffd369;
+    background: linear-gradient(60deg, #ffd369 67%, whitesmoke 93%);
+}
+#competencesText{
+    border:0px solid rgba(57,62,70,0.5);
+    background:rgba(57,62,70,0.5) ;
+font-family: 'Nunito', sans-serif;
+position:relative;
+left:100px;
+top:100px;
+height:500px;
+width:1000px;
+border-radius: 62px;
+padding: 50px;
+box-shadow: 0px 9px 39px 5px whitesmoke;
+font-size:20px;
+}
+#contactermoi{
+
+    position:absolute;
+    top:2810.75px;
+    left:200px;
+    right:0px;
+    height:100%;
+   
+    background:#ffd369;
+    background: linear-gradient(0deg, rgba(57,62,70,1) 7%, #ebc05e 93%);
+}
+#contactForm{
+    border:0px solid rgba(57,62,70,0.5);
+    background:rgba(57,62,70,0.5) ;
+font-family: 'Nunito', sans-serif;
+position:relative;
+left:100px;
+top:100px;
+height:500px;
+width:500px;
+border-radius: 62px;
+padding: 30px;
+box-shadow: 0px 9px 39px 5px whitesmoke;
+font-size:20px;
+}
+#contactForm input{
+    
+height:70px;
+width:400px;
+border-radius: 20px;
+margin: 20px;
+opacity: 0.3;
+} 
+#contactForm btn{
+    
+    height:60px;
+    width:400px;
+    border-radius: 20px;
+    
+    margin: 20px;
+    font-size:30px;
+    } 
+    
