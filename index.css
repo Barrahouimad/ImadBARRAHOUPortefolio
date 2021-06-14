@@ -4,6 +4,7 @@ left:0;
 right:0;
 top:0;
 bottom:0;
+/* pour supprimer les */
 overflow-x: hidden;
 
 }
@@ -35,11 +36,11 @@ nav{
     margin-left:10px;
     margin-top:3px;
 }
-#nav{
+.nav{
     border-radius: 62px;
 }
 
-#nav:hover{
+.nav:hover{
   text-decoration:solid  #ffd369;
   background: rgba(57,62,70,1);
   border-radius: 62px;
@@ -269,7 +270,6 @@ font-size:20px;
     width:87%;
     right:0px;
     height:100%;
-   
     background:#ffd369;
     background: linear-gradient(0deg, rgba(57,62,70,1) 7%, #ebc05e 93%);
 }
@@ -335,7 +335,7 @@ opacity: 0.3;
         display:none;
         visibility:hidden;
     }
-    #navcontainer{
+    .navcontainer{
         
          z-index: 3;
          position: absolute;
