@@ -25,7 +25,7 @@ nav{
     align-items: stretch;
   }
   
-  #icone{
+  .icone{
      height:70px;
      width:100px;
      margin-left:20px;
@@ -75,15 +75,14 @@ nav{
  right:0;
 
 }
-
-#nom{
+.nom{
   visibility: hidden;
     animation:intro 2s linear; 
     margin-top:110px;
     font-family: 'Train One', cursive;
     margin-left:10px;
 }
-#nnom{
+.nnom{
     animation:introo 2s  linear; 
     font-family: 'Train One', cursive;
     color:#eeeeee;
@@ -219,7 +218,7 @@ nav{
    font-family: 'Chango', cursive;
    margin-left:15px;
 }
-#projectitem{
+#projectitemcontainer >.projectitem{
     color:rgba(238,238,238,1);
     margin-top:200px;
     margin-left:120px;
@@ -295,7 +294,7 @@ border-radius: 20px;
 margin: 20px;
 opacity: 0.3;
 } 
-#contactForm btn{
+#contactForm button{
     
     height:60px;
     width:400px;
@@ -365,3 +364,7 @@ opacity: 0.3;
       }
 }
 
+#lastimage{
+    height:200px;
+    width:200px;
+}
