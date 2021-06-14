@@ -58,6 +58,10 @@ nav{
  
 }
 #btncontact{
+    border: solid 0.1px #ffd369;
+    padding:1em;
+    padding-left:2.5em;
+    color:#ffd369;
     animation:contact 0.5s linear;
     animation-delay: 2s;
     margin-left:160px;
