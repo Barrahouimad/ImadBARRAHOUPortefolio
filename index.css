@@ -18,7 +18,8 @@ nav{
   }
 
   #links{                                                                   
-    margin-top:70px;
+    margin-top:20px;
+    margin-left:20px;
     color:#ffd369;
     display:flex;
     flex-direction:column;
@@ -27,14 +28,14 @@ nav{
   
   .icone{
      height:70px;
-     width:100px;
+     width:140px;
      margin-left:20px;
+     margin-top:1em;
   }
 #logo{
     border-radius: 26px;
     height: 50px;
-    margin-left:10px;
-    margin-top:3px;
+    margin-left:20px;
 }
 .nav{
     border-radius: 62px;
@@ -54,7 +55,7 @@ nav{
     width:87%;
     background: rgb(57,62,70);
     background: linear-gradient(90deg, rgba(57,62,70,1) 37%, rgba(34,40,49,1) 83%);
-   height:100%;
+    min-height:170vh;
  
 }
 #btncontact{
@@ -69,7 +70,12 @@ nav{
     border-radius:62px;
     height:90px;
     width:300px;
-     font-size:25px;
+    font-size:25px;
+
+    }
+    #btncontact:hover{
+        background:#ffd369 ;
+        color:rgb(57,62,70);
     }
 #parade{
   clip-path: circle(46.5% at 100% 11%);
@@ -184,9 +190,9 @@ nav{
     #formation{
         position:absolute;
        width:87%;
-        top:700px;
+        top:750px;
         right:0px;
-        height:100%;
+        min-height:170vh;
         background:#ffd369;
         background: linear-gradient(40deg, rgba(57,62,70,1) 3%, #ffd369 93%);
        
@@ -199,10 +205,10 @@ nav{
 #projets{
  
     position:absolute;
-    top:1400px;
+    top:1450px;
     width:87%;
     right:0px;
-    height:100%;
+    min-height:170vh;
     background: url(assets/black4.jpg) ;
      background:#ffd369;
         background: linear-gradient(40deg, rgba(57,62,70,1) 27%, #ffd369 63%);

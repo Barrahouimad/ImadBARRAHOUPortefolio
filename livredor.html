@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire livre d'or - Amine El Mouradi</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img class="logo" src="./images/logo.png" alt="logo jeux sociétés">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link-form">Revenir à la Page d'acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#livredor" class="nav-link-form">Livre d'or</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link-form">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="livredor-content">
+            <h2 style="margin-bottom: 30px">Mon livre d'Or</h2>
+            <form>
+              <strong>Nom :</strong><br />
+              <input
+                class="input"
+                name="nom"
+                type="text"
+              /><br />
+              <strong>Prénom :</strong><br />
+              <input
+                class="input"
+                name="prenom"
+                type="text"
+              /><br />
+              <strong>Email :</strong><br />
+              <input
+                class="input"
+                name="email"
+                type="text"
+              /><br /><br />
+              <strong>Commentaire :</strong><br />
+              <textarea
+                data-limit-rows="true"
+                name="comment"
+                type="text"
+                cols="80"
+                rows="4"
+                style="resize:none"
+              ></textarea
+              ><br />
+<p id="ici"></p>
+              <button
+                type="submit"
+                class="livredor-btn soumettre"
+                onclick="traiter(this.form); return false;"
+              > Soumettre
+              </button>
+              <button type="reset" class="livredor-btn annuler" value="Annuler">
+               Annuler</button
+              ><br />
+            </form>
+            <p><a href="guestbook.html">Consulter mon Livre d'Or</a></p>
+          </div>
+    </main>
+    
+
+    <footer id="contact">
+        <img src="images/pdp.jpg" alt="">
+        <div class="contacts" >
+           <p> N'hésitez pas à me contacter !</p>
+        </div>
+        <div class="social black">
+            <div class="social-links ">
+              <a
+                class="tooltip"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100010477530830"
+                ><i class="fab fa-facebook"
+                  ></i
+                ></a
+              >
+              <a
+                class="tooltip"
+                target="_blank"
+                href="mailto:elmouradi.amine98@gmail.com "
+                ><i class="fas fa-envelope"
+                  ></i
+                ></a
+              >
+              <a
+                class="tooltip"
+                target="_blank"
+                href="https://www.linkedin.com/in/amine-elmouradi-096630174/"
+                ><i class="fab fa-linkedin"
+                  ></i
+                ></a
+              >
+              <a
+                class="tooltip"
+                target="_blank"
+                href="https://github.com/ElmouradiAmine"
+                ><i class="fab fa-github"
+                  ></i
+                ></a
+              >
+              <a class="tooltip" href=""
+                ><i class="fas fa-check-circle"
+                  ></i
+                ></a
+              >
+          </div>
+        </div>
+    </footer>
+
+    <script>
+      function traiter(myForm) {
+        var qryStr =
+          "nom=" +
+          myForm.nom.value +
+          "&" +
+          "prenom=" +
+          myForm.prenom.value +
+          "&" +
+          "email=" +
+          myForm.email.value +
+          "&" +
+          "comment=" +
+          myForm.comment.value;
+
+        var myXMLHttp = new XMLHttpRequest();
+        var uri =
+          "http://yasmina.emi.ac.ma/~aelmouradi/cgi-bin/Python/guestbook.py";
+
+        myXMLHttp.open("POST", uri, false);
+        myXMLHttp.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+        myXMLHttp.send(qryStr);
+
+        if (myXMLHttp.readyState == 4 && myXMLHttp.status == 200) {
+          document.getElementById("ici").innerHTML = myXMLHttp.responseText;
+          myForm.reset();
+        } else {
+          document.write(
+            "Err: " + myXMLHttp.readyState + ", status: "  + myXMLHttp.status + ", details : " + myXMLHttp.statusText
+          );
+        }
+      }
+    </script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/30172619a1.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
