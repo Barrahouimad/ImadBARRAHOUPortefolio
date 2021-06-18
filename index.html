@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -76,33 +80,33 @@
             
             <div id="projets">
                 <div id="projectitemcontainer" class="row">
-                    <div  class="projectitem col-1 ">
+                    <div  class="projectitem col-1  container-fluid">
                         <strong>FORUM ONLINE</strong>
                          <p class="m-3">site web pour trouver des opportunités de travail ainsi que des stages</p>
                          <p class="text-dark commentaire " >React-Js, Bootsrap.</p>
-                         <a href="https://github.com/Barrahouimad/ForumOnLine" class="btn btn-outline-dark m-4">VISITER</a>
+                         <a href="https://github.com/Barrahouimad/ForumOnLine" style="color:#f7c552;position:relative; top:10px;left:2em; bottom:2px; " class="btn btn-outline-dark">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1">
+                    <div  class="projectitem col-1 container-fluid">
                         <strong>MULTI BROWSER</strong>
                          <p class="m-3">application android pour l’utilisation de plusieurs moteurs de
                             navigation web.</p>
                             <p class="text-dark commentaire" >Android Studio -Java.</p>
-                         <button  class="btn btn-outline-dark m-4">VISITER</button>
+                            <a href="https://github.com/Barrahouimad/ForumOnLine" class="btn btn-outline-dark" style="color:#f7c552; position:relative; top:10px;left:2em; bottom:2px;">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1">
+                    <div  class="projectitem col-1 container-fluid">
                         <strong>PROFILE CONTROL</strong>
                          <p class="m-3">site web pour Controller et visualiser les profiles</p>
                          <p class="text-dark commentaire" >HTML5, CSS3, PHP, JQUERY, JSON.</p>
-                         <a href="https://github.com/Barrahouimad/profiles" class="btn btn-outline-dark m-4">VISITER</a>
+                         <a href="https://github.com/Barrahouimad/profiles" class="btn btn-outline-dark " style="color:#f7c552; position:relative; top:10px;left:2em; bottom:2px;">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1">
+                    <div  class="projectitem col-1 container-fluid">
                         <strong>Minutebrico</strong>
                          <p class="m-3">Application web pour mettre le lien entre les bricoleurs et les clients</p>
                             <p class="text-dark commentaire" >React-Js, Spring Boot, Mysql.</p>
-                         <a href="https://github.com/Barrahouimad/MinuteBrico" class="btn btn-outline-dark m-4">VISITER</a>
+                         <a href="https://github.com/Barrahouimad/MinuteBrico" class="btn btn-outline-dark" style="color:#f7c552; position:relative; top:10px;left:2em; bottom:2px;">VISITER</a>
                     </div>
                   
                 </div>
@@ -134,16 +138,21 @@
                 
             </div>
 
-            <div id="contactermoi" class="d-flex flex-row" >
+            <div id="contactermoi"  >
+              <div  class="d-flex flex-row" >
                 <div class=" col-6 d-flex flex-column">
-                    <div id="contactForm">
-                       <input type="text" placeholder="Votre Email"/>
-                       <input type="text" placeholder="Votre Message"/>
-                        <button type="submit"   class="btn btn-outline-dark">Envoyer</button>
-                    </div>
-                   
+                    <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" id="contactForm">
+                       <input type="text" name ="Email" placeholder="Votre Email"/>
+                       <input type="text" name="message" placeholder="Votre Message"/>
+                        <button type="submit"   class="btn btn-outline-dark" onClick="sendEmail">Envoyer</button>
+                    </form>
+               
+                
+                    
+                      
+                        </div>
 
-                </div>
+                   
                 <div id="cv" class="col-6 row">
                     <h3>Télécharger Mon CV :</h3>
                     <a href="assets/cv.pdf" download>
@@ -151,10 +160,42 @@
                     </a>
                 </div>
             </div>
+          
+
+            <div class="d-flex flex-row justify-content-center" style="margin-left: 10em; margin-top: 10em;">
+               
+                <div class=" col-6 d-flex flex-column social black">
+                  <h6 style="color:rgb(243, 213, 177) ; opacity: 0.5;;">©BarrahouImad -All Rights Reserved</h6>
+               <div class="row  " style="margin-left:2.7em;">
+                <a href="https://www.facebook.com/" class="col-1 fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/feed/" class="col-1 fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/?utm_source=pwa_homescreen" class="col-1 fa fa-instagram"></a>
+
+               </div>
+                       
+                   
+                </div>
+      
+    </div>
+</div>
        </div>
   
 </div>
 </div>
+<script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+       
+        To: 'imadbarrahou99@gmail.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>

@@ -233,7 +233,6 @@ nav{
     margin-top:200px;
     margin-left:120px;
     padding-top:10px;
-
     border:1px solid rgba(57,62,70,1);
     height:300px;
     width:200px;
@@ -250,10 +249,10 @@ nav{
 #competences{
 
     position:absolute;
-    top:2105px;
+    top:2165px;
     width:87%;
     right:0px;
-    height:100%;
+    min-height:170vh;
    
     background:#ffd369;
     background: linear-gradient(60deg, #ffd369 67%, whitesmoke 93%);
@@ -275,12 +274,12 @@ font-size:20px;
 #contactermoi{
 
     position:absolute;
-    top:2810.75px;
+    top:2880.75px;
     width:87%;
     right:0px;
     height:100%;
     background:#ffd369;
-    background: linear-gradient(0deg, rgba(57,62,70,1) 7%, #ebc05e 93%);
+    background: linear-gradient(0deg, rgba(57,62,70,1) 11%, #ebc05e 63%);
 }
 #contactForm{
     border:0px solid rgba(57,62,70,0.5);

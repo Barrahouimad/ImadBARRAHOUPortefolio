@@ -22,106 +22,58 @@
 
       </div>
 
-        <div class="col-10 mt-5 container form">
+        <div class="col-9 mt-5 container form">
           <div class="container">
           <div class="row"> 
             <h2 class=" col mx-5 mt-2"style="margin-bottom: 30px ">Mon livre d'Or</h2>
-          </div>
-            <form>
-              <strong>Nom :</strong><br />
-              <input
-                class="form-control m-2 input"
-                name="nom"
-                type="text"
-              /><br />
-              <strong>Prénom :</strong><br />
-              <input
-                 class="form-control m-2 input"
-                name="prenom"
-                type="text"
-              /><br />
-              <strong>Email :</strong><br />
-              <input
-                 class="form-control m-2 input"
-                name="email"
-                type="text"
-              /><br /><br />
-              <strong>Commentaire :</strong><br />
-              <textarea
-                data-limit-rows="true"
-                name="comment"
-                class="form-control m-2 input "
-                type="text"
-                cols="80"
-                rows="4"
-                style="resize:none"
-              ></textarea
-              ><br />
-<p id="ici"></p>
-              <button
-                type="submit"
-                class="livredor-btn soumettre  btn btn-outline-success mx-5"
-                onclick="traiter(this.form); return false;"
-              > Soumettre
-              </button>
-              <button type="reset" class=" livredor-btn btn btn-outline-danger annuler" value="Annuler">
-               Annuler</button
-              ><br />
+            </div>
+            <form  method = "post" action = "http://yasmina.emi.ac.ma/~ibarrahou/cgi-bin/Python/addComment.py">
+                        <strong>Nom :</strong><br />
+                        <input
+                          class="form-control m-2 input"
+                          name="nom"
+                          type="text"
+                        /><br />
+                        <strong>Prénom :</strong><br />
+                        <input
+                          class="form-control m-2 input"
+                          name="prenom"
+                          type="text"
+                        /><br />
+                        <strong>Email :</strong><br />
+                        <input
+                          class="form-control m-2 input"
+                          name="email"
+                          type="text"
+                        /><br /><br />
+                        <strong>Commentaire :</strong><br />
+                        <textarea
+                          data-limit-rows="true"
+                          name="comment"
+                          class="form-control m-2 input "
+                          type="text"
+                          cols="80"
+                          rows="4"
+                          style="resize:none"
+                        ></textarea
+                        ><br />
+                       <p id="ici"></p>
+                      
+                        <input  class="livredor-btn soumettre  btn btn-outline-success mx-5" type="submit" value="Soumettre" />
+
+                        <button type="reset" class=" livredor-btn btn btn-outline-danger annuler" value="Annuler">
+                        Annuler</button
+                        ><br />
             </form>
-            <p><a href="guestbook.html" class="nav-link mx-5">Consulter mon Livre d'Or</a></p>
+            <p><a href="comments.html" class="nav-link mx-5">Consulter mon Livre d'Or</a></p>
           </div>
         </div>
     </main>
   </div>
 
-    <footer id="contact">
-        <img src="images/pdp.jpg" alt="">
-        <div class="contacts" >
-           <p> N'hésitez pas à me contacter !</p>
-        </div>
-        <div class="social black">
-            <div class="social-links ">
-            
-          </div>
-        </div>
-    </footer>
+   
   
-    <script>
-      function traiter(myForm) {
-        var qryStr =
-          "nom=" +
-          myForm.nom.value +
-          "&" +
-          "prenom=" +
-          myForm.prenom.value +
-          "&" +
-          "email=" +
-          myForm.email.value +
-          "&" +
-          "comment=" +
-          myForm.comment.value;
-
-        var myXMLHttp = new XMLHttpRequest();
-        var uri =
-          "http://yasmina.emi.ac.ma/~ibarrahou/cgi-bin/Python/guestbook.py";
-
-        myXMLHttp.open("POST", uri, false);
-        myXMLHttp.setRequestHeader(
-          "Content-type",
-          "application/x-www-form-urlencoded"
-        );
-        myXMLHttp.send(qryStr);
-
-        if (myXMLHttp.readyState == 4 && myXMLHttp.status == 200) {
-          document.getElementById("ici").innerHTML = myXMLHttp.responseText;
-          myForm.reset();
-        } else {
-          document.write(
-            "Err: " + myXMLHttp.readyState + ", status: "  + myXMLHttp.status + ", details : " + myXMLHttp.statusText
-          );
-        }
-      }
-    </script>
+  
     <script type="text/javascript" src="scripts.js"></script>
     <script
       src="https://kit.fontawesome.com/30172619a1.js"
