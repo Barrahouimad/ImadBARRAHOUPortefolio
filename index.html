@@ -35,7 +35,7 @@
            </nav>
         </div>
           <div  class="col-md-10 col-xs-12">
-              <div id="home">
+              <div  id="home">
                 <p class="nom"  >print ( BONJOUR ! )</p> 
                 <p class="nnom mt-2" > >> BONJOUR !</p> 
                 <p   class="nom mt-5"> print ( JE SUIS BARRAHOU IMAD ELEVE INGENIEUR EN INFORMATIQUE) </p>
@@ -47,6 +47,10 @@
                <img src="assets/paradecoupee.jpg" class="logo" id="parade"  alt=""/>
               <a id="btncontact" href="#contactermoi" class="nav-link">Contacter moi</a>
               </div>
+
+
+
+
               <div id="formation">
                 <div >
                    
@@ -56,7 +60,7 @@
                             <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
                             <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
                           </svg>
-                      <p class="col-auto my-5" >ECOLE MOHAMMADIA D'INGENIEUR</p>
+                      <p class="col-auto my-5 mx-2" >ECOLE MOHAMMADIA D'INGENIEUR</p>
                  </div> 
 
                  <div class=" row mt-5">
@@ -64,7 +68,7 @@
                         <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
                         <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
                       </svg>
-                  <p class="col-auto my-5" >CPGE MP TANGER (MOULAY AL HASSAN)</p>
+                  <p class="col-auto my-5 mx-2" >CPGE MP TANGER (MOULAY AL HASSAN)</p>
              </div>
 
              <div class=" row mt-5">
@@ -72,7 +76,7 @@
                     <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
                     <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
                   </svg>
-              <p class="col-auto my-5">LYCEE MOULAY RACHID (SCIENCE MATH)</p>
+              <p class="col-auto my-5 mx-2">LYCEE MOULAY RACHID (SCIENCE MATH)</p>
          </div>
                     </div>
                 </div>
@@ -80,14 +84,14 @@
             
             <div id="projets">
                 <div id="projectitemcontainer" class="row">
-                    <div  class="projectitem col-1  container-fluid">
+                    <div  class="projectitem col-md-2  container-fluid">
                         <strong>FORUM ONLINE</strong>
                          <p class="m-3">site web pour trouver des opportunités de travail ainsi que des stages</p>
                          <p class="text-dark commentaire " >React-Js, Bootsrap.</p>
                          <a href="https://github.com/Barrahouimad/ForumOnLine" style="color:#f7c552;position:relative; top:10px;left:2em; bottom:2px; " class="btn btn-outline-dark">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1 container-fluid">
+                    <div  class="projectitem col-md-2 col-s-6 container-fluid">
                         <strong>MULTI BROWSER</strong>
                          <p class="m-3">application android pour l’utilisation de plusieurs moteurs de
                             navigation web.</p>
@@ -95,14 +99,14 @@
                             <a href="https://github.com/Barrahouimad/ForumOnLine" class="btn btn-outline-dark" style="color:#f7c552; position:relative; top:10px;left:2em; bottom:2px;">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1 container-fluid">
+                    <div  class="projectitem col-md-2 col-s-6  container-fluid">
                         <strong>PROFILE CONTROL</strong>
                          <p class="m-3">site web pour Controller et visualiser les profiles</p>
                          <p class="text-dark commentaire" >HTML5, CSS3, PHP, JQUERY, JSON.</p>
                          <a href="https://github.com/Barrahouimad/profiles" class="btn btn-outline-dark " style="color:#f7c552; position:relative; top:10px;left:2em; bottom:2px;">VISITER</a>
                     </div>
 
-                    <div  class="projectitem col-1 container-fluid">
+                    <div  class="projectitem col-md-1 container-fluid">
                         <strong>Minutebrico</strong>
                          <p class="m-3">Application web pour mettre le lien entre les bricoleurs et les clients</p>
                             <p class="text-dark commentaire" >React-Js, Spring Boot, Mysql.</p>
@@ -139,21 +143,22 @@
             </div>
 
             <div id="contactermoi"  >
-              <div  class="d-flex flex-row" >
-                <div class=" col-6 d-flex flex-column">
+              <div  class="row" >
+                <div class=" col-md-6 ">
+                    <div  class="d-flex flex-column">
                     <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" id="contactForm">
                        <input type="text" name ="Email" placeholder="Votre Email"/>
                        <input type="text" name="message" placeholder="Votre Message"/>
                         <button type="submit"   class="btn btn-outline-dark" onClick="sendEmail">Envoyer</button>
                     </form>
                
-                
+                    </div>
                     
                       
                         </div>
 
                    
-                <div id="cv" class="col-6 row">
+                <div id="cv" class="col-md-6 row">
                     <h3>Télécharger Mon CV :</h3>
                     <a href="assets/cv.pdf" download>
                         <img src="assets/parade.jpg" id="lastimage" alt="Télécharger Mon CV"/>
@@ -162,9 +167,9 @@
             </div>
           
 
-            <div class="d-flex flex-row justify-content-center" style="margin-left: 10em; margin-top: 10em;">
+            <div  class="d-flex flex-row justify-content-center" style="margin-left: 10em; margin-top: 10em;">
                
-                <div class=" col-6 d-flex flex-column social black">
+                <div id="rights" class=" col-6 d-flex flex-column social black">
                   <h6 style="color:rgb(243, 213, 177) ; opacity: 0.5;;">©BarrahouImad -All Rights Reserved</h6>
                <div class="row  " style="margin-left:2.7em;">
                 <a href="https://www.facebook.com/" class="col-1 fa fa-facebook"></a>
@@ -182,7 +187,7 @@
   
 </div>
 </div>
-<script type="text/javascript">
+<script >
     function sendEmail() {
       Email.send({
        
